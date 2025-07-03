@@ -14,7 +14,7 @@ Aplicación web desarrollada con **React** y **TypeScript**, que simula una cart
 ## ⚛️ Tecnologías y herramientas utilizadas
 
 - React 18 con TypeScript
-- Vite (como bundler ultrarrápido)
+- Vite 
 - HTML5 + CSS3
 - Hooks de React (`useState`, `useMemo`,etc)
 - Arquitectura modular con componentes reutilizables
