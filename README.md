@@ -1,54 +1,111 @@
-# React + TypeScript + Vite
+# 🧾 Carta Interactiva - Restaurante (React + TypeScript + Tailwind)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web diseñada para funcionar como una carta digital de restaurante. Permite **seleccionar productos**, calcular el **total del pedido en tiempo real** y realizar una simulación de compra rápida y responsiva. Ideal como demostración de habilidades en desarrollo frontend moderno con React.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Demo en vivo
 
-## Expanding the ESLint configuration
+👉 Próximamente disponible
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🧩 Tecnologías utilizadas
+
+- ⚛️ **React** con **TypeScript**
+- 🎨 **Tailwind CSS** para estilos rápidos y responsivos
+- ⚙️ **Vite** para empaquetado y desarrollo rápido
+- ♻️ Lógica de estado y hooks personalizados (`useOrder`)
+- 🧠 Composición de componentes modular
+
+---
+
+## ✨ Características principales
+
+- ✅ Interfaz moderna y mobile-first
+- ✅ Añadir productos desde el menú con botón interactivo
+- ✅ Cálculo de total en tiempo real (formato carrito)
+- ✅ Separación de responsabilidades por componente
+- ✅ Código limpio, modular y reutilizable
+
+---
+
+## 📁 Estructura de carpetas
+
+```
+📦 carta-interactiva/
+├── App.tsx                  # Componente principal
+├── main.tsx                 # Punto de entrada
+├── index.css                # Estilos globales con Tailwind + fondo decorativo
+├── MenuElement.tsx          # Componente individual del menú
+├── OrderContent.tsx         # Componente que muestra los elementos seleccionados
+├── useOrder.ts              # Hook personalizado para gestionar el estado del pedido
+├── db.ts                    # Datos simulados (array de platos)
+├── vite-env.d.ts            # Configuración de Vite y TypeScript
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Cómo ejecutar el proyecto localmente
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+1. Clona el repositorio:
+
+```bash
+git clone https://github.com/tuusuario/carta-react.git
+cd carta-react
 ```
+
+2. Instala las dependencias:
+
+```bash
+npm install
+```
+
+3. Ejecuta la aplicación en modo desarrollo:
+
+```bash
+npm run dev
+```
+
+4. Abre en tu navegador:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🧪 Datos de prueba
+
+Los platos se almacenan localmente en el archivo `db.ts` para simular una respuesta de API.
+
+Puedes modificar o extender el menú fácilmente editando ese archivo.
+
+---
+
+## 📱 Responsividad
+
+Diseño optimizado con **Tailwind CSS**, que se adapta automáticamente a dispositivos móviles, tablets y pantallas grandes.
+
+---
+
+## 📌 ¿Qué demuestra este proyecto?
+
+- Uso profesional de React con TypeScript
+- Gestión de estado con hooks personalizados
+- Estilo limpio con Tailwind CSS
+- Separación de lógica y presentación
+- Aplicación funcional tipo carrito sin backend
+
+---
+
+## 👨‍💻 Autor
+
+**Cristian Serrano**  
+🔗 [GitHub - Cris1277](https://github.com/Cris1277)
+
+---
+
+## 📝 Licencia
+
+MIT © 2025 Cristian Serrano
