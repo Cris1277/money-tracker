@@ -15,7 +15,7 @@ Aplicación web desarrollada con **React** y **TypeScript**, que simula una cart
 
 - React 18 con TypeScript
 - Vite 
-- HTML5 + CSS3
+- HTML5 + Tailwind CSS
 - Hooks de React (`useState`, `useMemo`,etc)
 - Arquitectura modular con componentes reutilizables
 - Custom hook: `useOrder` para gestión del estado del pedido
