@@ -1,102 +1,101 @@
-# 🧾 Carta Interactiva - Restaurante (React + TypeScript + Tailwind)
 
-Aplicación web diseñada para funcionar como una carta digital de restaurante. Permite **seleccionar productos**, calcular el **total del pedido en tiempo real** y realizar una simulación de compra rápida y responsiva. Ideal como demostración de habilidades en desarrollo frontend moderno con React.
+# 🍽️ Carta Interactiva de Restaurante — React + TypeScript
+
+Aplicación web desarrollada con **React** y **TypeScript**, que simula una carta digital para un restaurante. Permite a los usuarios seleccionar productos, visualizar el contenido de su orden y ver el total a pagar, todo en una interfaz rápida, intuitiva y responsive.
 
 ---
 
 ## 🔗 Demo en vivo
 
-👉 [https://sunny-gecko-27be8b.netlify.app/](https://sunny-gecko-27be8b.netlify.app/)
-
-
----
-
-## 🧩 Tecnologías utilizadas
-
-- ⚛️ **React** con **TypeScript**
-- 🎨 **Tailwind CSS** para estilos rápidos y responsivos
-- ⚙️ **Vite** para empaquetado y desarrollo rápido
-- ♻️ Lógica de estado y hooks personalizados (`useOrder`)
-- 🧠 Composición de componentes modular
+👉 [Ver sitio desplegado en Netlify](https://sunny-gecko-27be8b.netlify.app)
 
 ---
 
-## ✨ Características principales
+## ⚛️ Tecnologías y herramientas utilizadas
 
-- ✅ Interfaz moderna y mobile-first
-- ✅ Añadir productos desde el menú con botón interactivo
-- ✅ Cálculo de total en tiempo real (formato carrito)
-- ✅ Separación de responsabilidades por componente
-- ✅ Código limpio, modular y reutilizable
+- React 18 con TypeScript
+- Vite (como bundler ultrarrápido)
+- HTML5 + CSS3
+- Hooks de React (`useState`, `useMemo`,etc)
+- Arquitectura modular con componentes reutilizables
+- Custom hook: `useOrder` para gestión del estado del pedido
+- Despliegue con **Netlify**
 
 ---
 
-## 📁 Estructura de carpetas
+## 📁 Estructura del proyecto
 
 ```
-📦 carta-interactiva/
-├── App.tsx                  # Componente principal
-├── main.tsx                 # Punto de entrada
-├── index.css                # Estilos globales con Tailwind + fondo decorativo
-├── MenuElement.tsx          # Componente individual del menú
-├── OrderContent.tsx         # Componente que muestra los elementos seleccionados
-├── useOrder.ts              # Hook personalizado para gestionar el estado del pedido
-├── db.ts                    # Datos simulados (array de platos)
-├── vite-env.d.ts            # Configuración de Vite y TypeScript
+📦 root/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── MenuElement.tsx       # Componente para cada ítem del menú
+│   │   └── OrderContent.tsx      # Componente que muestra el contenido del pedido
+│   ├── data/
+│   │   └── db.ts                 # Base de datos local simulada con productos
+│   ├── hooks/
+│   │   └── useOrder.ts           # Custom hook para manejar pedidos
+│   ├── types/
+│   │   └── index.ts              # Tipos globales (TypeScript)
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── index.css
+│   └── vite-env.d.ts
+├── index.html
+├── vite.config.ts
+├── tsconfig.json
+└── README.md
 ```
 
 ---
 
-## 🚀 Cómo ejecutar el proyecto localmente
+## ✨ Funcionalidades
+
+- 📋 Visualización de menú en pantalla
+- ➕ Añadir ítems a un pedido
+- ➖ Eliminar ítems del pedido
+- 💰 Cálculo automático del total con `useMemo`
+- 📱 Diseño completamente responsive
+
+---
+
+## 🚀 Mejores futuras
+
+- 💸 Añadir propinas o sección para seleccionar porcentaje
+- 💬 Incluir campo de comentarios o notas para el pedido
+- 🧾 Enviar el pedido por correo o integrarlo con una API real
+- 🌐 Soporte multi-idioma
+
+---
+
+## 🧠 Hooks usados
+
+- `useState`: manejo del estado del pedido
+- `useMemo`: cálculo eficiente del total a pagar
+- `useEffect` (en futuras mejoras)
+- `useContext` (posible en versiones ampliadas)
+- Custom Hook: `useOrder` centraliza la lógica de pedido
+
+---
+
+## 📦 Instalación local
 
 1. Clona el repositorio:
-
 ```bash
-git clone https://github.com/tuusuario/carta-react.git
-cd carta-react
+git clone https://github.com/tu_usuario/carta-interactiva.git
+cd carta-interactiva
 ```
 
 2. Instala las dependencias:
-
 ```bash
 npm install
 ```
 
-3. Ejecuta la aplicación en modo desarrollo:
-
+3. Inicia el entorno de desarrollo:
 ```bash
 npm run dev
 ```
-
-4. Abre en tu navegador:
-
-```
-http://localhost:5173
-```
-
----
-
-## 🧪 Datos de prueba
-
-Los platos se almacenan localmente en el archivo `db.ts` para simular una respuesta de API.
-
-Puedes modificar o extender el menú fácilmente editando ese archivo.
-
----
-
-## 📱 Responsividad
-
-Diseño optimizado con **Tailwind CSS**, que se adapta automáticamente a dispositivos móviles, tablets y pantallas grandes.
-
----
-
-## 📌 ¿Qué demuestra este proyecto?
-
-- Uso profesional de React con TypeScript
-- Gestión de estado con hooks personalizados
-- Estilo limpio con Tailwind CSS
-- Separación de lógica y presentación
-- Aplicación funcional tipo carrito sin backend
 
 ---
 
@@ -109,4 +108,4 @@ Diseño optimizado con **Tailwind CSS**, que se adapta automáticamente a dispos
 
 ## 📝 Licencia
 
-MIT © 2025 Cristian Serrano
+MIT License © 2025 Cristian Serrano
