@@ -2,7 +2,12 @@ import MenuElement from "./components/MenuElement";
 import OrderContent from "./components/OrderContent";
 import useOrder from "./hooks/useOrder";
 import { menuItems } from "./data/db";
+/**
+ * Componente principal de la aplicación "MoneyTracker"
+ * Controla la estructura general de la UI y conecta los componentes con el estado global del pedido.
+ */
 function App() {
+   // Extraemos funciones y datos del hook personalizado useOrder
   const { addItem, order, subtotalAmount, removeItem } = useOrder();
   return (
     <>
