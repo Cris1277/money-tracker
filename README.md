@@ -6,7 +6,8 @@ Aplicación web diseñada para funcionar como una carta digital de restaurante. 
 
 ## 🔗 Demo en vivo
 
-👉 Próximamente disponible
+👉 [https://sunny-gecko-27be8b.netlify.app/](https://sunny-gecko-27be8b.netlify.app/)
+
 
 ---
 
