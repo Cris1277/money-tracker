@@ -60,7 +60,7 @@ Aplicación web desarrollada con **React** y **TypeScript**, que simula una cart
 
 ---
 
-## 🚀 Mejores futuras
+## 🚀 Mejoras futuras
 
 - 💸 Añadir propinas o sección para seleccionar porcentaje
 - 💬 Incluir campo de comentarios o notas para el pedido
