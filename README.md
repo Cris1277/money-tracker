@@ -1,43 +1,42 @@
+# 🍽️ Interactive Restaurant Menu — React + TypeScript
 
-# 🍽️ Carta Interactiva de Restaurante — React + TypeScript
-
-Aplicación web desarrollada con **React** y **TypeScript**, que simula una carta digital para un restaurante. Permite a los usuarios seleccionar productos, visualizar el contenido de su orden y ver el total a pagar, todo en una interfaz rápida, intuitiva y responsive.
-
----
-
-## 🔗 Demo en vivo
-
-👉 [Ver sitio desplegado en Netlify](https://sunny-gecko-27be8b.netlify.app)
+Web application built with **React** and **TypeScript** that simulates a digital restaurant menu. Users can select products, view their order contents, and see the total cost — all within a fast, intuitive, and responsive interface.
 
 ---
 
-## ⚛️ Tecnologías y herramientas utilizadas
+## 🔗 Live Demo
 
-- React 18 con TypeScript
-- Vite 
+👉 [View site on Netlify](https://sunny-gecko-27be8b.netlify.app)
+
+---
+
+## ⚛️ Technologies and Tools Used
+
+- React 18 with TypeScript
+- Vite
 - HTML5 + Tailwind CSS
-- Hooks de React (`useState`, `useMemo`,etc)
-- Arquitectura modular con componentes reutilizables
-- Custom hook: `useOrder` para gestión del estado del pedido
-- Despliegue con **Netlify**
+- React Hooks (`useState`, `useMemo`, etc.)
+- Modular architecture with reusable components
+- Custom hook: `useOrder` for managing order state
+- Deployed with **Netlify**
 
 ---
 
-## 📁 Estructura del proyecto
+## 📁 Project Structure
 
 ```
 📦 root/
 ├── public/
 ├── src/
 │   ├── components/
-│   │   ├── MenuElement.tsx       # Componente para cada ítem del menú
-│   │   └── OrderContent.tsx      # Componente que muestra el contenido del pedido
+│   │   ├── MenuElement.tsx       # Component for each menu item
+│   │   └── OrderContent.tsx      # Component showing order contents
 │   ├── data/
-│   │   └── db.ts                 # Base de datos local simulada con productos
+│   │   └── db.ts                 # Local mock database with products
 │   ├── hooks/
-│   │   └── useOrder.ts           # Custom hook para manejar pedidos
+│   │   └── useOrder.ts           # Custom hook for order management
 │   ├── types/
-│   │   └── index.ts              # Tipos globales (TypeScript)
+│   │   └── index.ts              # Global TypeScript types
 │   ├── App.tsx
 │   ├── main.tsx
 │   ├── index.css
@@ -50,62 +49,62 @@ Aplicación web desarrollada con **React** y **TypeScript**, que simula una cart
 
 ---
 
-## ✨ Funcionalidades
+## ✨ Features
 
-- 📋 Visualización de menú en pantalla
-- ➕ Añadir ítems a un pedido
-- ➖ Eliminar ítems del pedido
-- 💰 Cálculo automático del total con `useMemo`
-- 📱 Diseño completamente responsive
-
----
-
-## 🚀 Mejoras futuras
-
-- 💸 Añadir propinas o sección para seleccionar porcentaje
-- 💬 Incluir campo de comentarios o notas para el pedido
-- 🧾 Enviar el pedido por correo o integrarlo con una API real
-- 🌐 Soporte multi-idioma
+- 📋 Menu display
+- ➕ Add items to order
+- ➖ Remove items from order
+- 💰 Automatic total calculation using `useMemo`
+- 📱 Fully responsive design
 
 ---
 
-## 🧠 Hooks usados
+## 🚀 Future Improvements
 
-- `useState`: manejo del estado del pedido
-- `useMemo`: cálculo eficiente del total a pagar
-- `useEffect` (en futuras mejoras)
-- `useContext` (posible en versiones ampliadas)
-- Custom Hook: `useOrder` centraliza la lógica de pedido
+- 💸 Add tip options or percentage selector
+- 💬 Include comment/note field for orders
+- 🧾 Send order via email or integrate with real API
+- 🌐 Multi-language support
 
 ---
 
-## 📦 Instalación local
+## 🧠 Hooks Used
 
-1. Clona el repositorio:
+- `useState`: manage order state
+- `useMemo`: efficient total price calculation
+- `useEffect` (planned for future features)
+- `useContext` (possible in extended versions)
+- Custom Hook: `useOrder` centralizes order logic
+
+---
+
+## 📦 Local Installation
+
+1. Clone the repository:
 ```bash
-git clone https://github.com/tu_usuario/carta-interactiva.git
+git clone https://github.com/your_user/carta-interactiva.git
 cd carta-interactiva
 ```
 
-2. Instala las dependencias:
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Inicia el entorno de desarrollo:
+3. Start the development server:
 ```bash
 npm run dev
 ```
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Author
 
 **Cristian Serrano**  
 🔗 [GitHub - Cris1277](https://github.com/Cris1277)
 
 ---
 
-## 📝 Licencia
+## 📝 License
 
 MIT License © 2025 Cristian Serrano
